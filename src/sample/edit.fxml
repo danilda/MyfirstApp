@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="600.0" prefHeight="491.0" prefWidth="600.0" stylesheets="@my.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DialogController">
+   <children>
+      <AnchorPane prefHeight="63.0" prefWidth="600.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="35.0" prefWidth="338.0" style="-fx-text-alignment: center;" text="Посторение графика функции" textAlignment="CENTER" textOverrun="CLIP" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <JFXButton onAction="#showDialog2" style="-fx-background-color: #fea;" text="Постороить" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="40.0" />
+            <JFXButton layoutX="128.0" layoutY="87.0" onAction="#clearData" style="-fx-background-color: #fea;" text="Очистить" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="40.0" />
+            <JFXTextField fx:id="input" alignment="CENTER" layoutX="4.0" layoutY="49.0" maxWidth="48.0" minWidth="48.0" prefHeight="35.0" prefWidth="48.0" text="0" AnchorPane.bottomAnchor="84.0" AnchorPane.leftAnchor="40.0" />
+            <Label layoutX="25.0" layoutY="23.0" prefHeight="19.0" prefWidth="163.0" text="Введите массовую часть" AnchorPane.bottomAnchor="126.0" AnchorPane.leftAnchor="40.0" />
+         </children>
+      </AnchorPane>
+      <LineChart id="lineChart" fx:id="numberLineChart" prefHeight="300.0" prefWidth="600.0">
+        <xAxis>
+            <NumberAxis prefHeight="0.0" prefWidth="542.0" side="LEFT" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</VBox>

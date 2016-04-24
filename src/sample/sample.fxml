@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="600.0" prefHeight="491.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="68.0" layoutY="51.0" text="Матрица" textOverrun="CLIP" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="30.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" layoutY="27.0" prefHeight="21.0" prefWidth="215.0" text="Частицы округлой формы" textOverrun="CLIP" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="-10.0" AnchorPane.topAnchor="30.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="88.0" layoutY="71.0" text="Волокна" textOverrun="CLIP" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="30.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane prefHeight="72.0" prefWidth="600.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="46.0" prefWidth="600.0">
+                           <children>
+                              <AnchorPane layoutX="200.0" prefHeight="46.0" prefWidth="200.0" styleClass="gg" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+                                 <children>
+                                    <JFXComboBox id="choiceBoxMatrix2" fx:id="choiceBoxMatrix2" layoutX="19.0" layoutY="9.0" onAction="#comboBox2" prefHeight="29.0" prefWidth="162.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="400.0" prefHeight="46.0" prefWidth="200.0" styleClass="gg" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0">
+                                 <children>
+                                    <JFXComboBox id="choiceBoxMatrix3" fx:id="choiceBoxMatrix3" layoutX="14.0" layoutY="9.0" onAction="#comboBox3" prefHeight="29.0" prefWidth="162.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="46.0" prefWidth="200.0" styleClass="gg" AnchorPane.leftAnchor="0.0">
+                                 <children>
+                                    <JFXComboBox id="choiceBoxMatrix" fx:id="choiceBoxMatrix" layoutX="10.0" layoutY="10.0" onAction="#comboBox" prefHeight="29.0" prefWidth="162.0" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="71.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="150.0" text="Свойства матрицы:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="5.0">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="5.0" layoutY="4.0" prefHeight="21.0" prefWidth="33.0" text="E  =" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="35.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="48.0" prefHeight="16.0" prefWidth="13.0" text="m" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="47.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="em" layoutX="53.0" layoutY="38.0" prefHeight="21.0" prefWidth="96.0" text="0" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="35.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="71.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="259.0" text="Свойства углеродного волокна:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="5.0" layoutY="4.0" prefHeight="21.0" prefWidth="33.0" text="E  =" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="35.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="48.0" prefHeight="16.0" prefWidth="13.0" text="f" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="47.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="ef" layoutX="53.0" layoutY="38.0" prefHeight="21.0" prefWidth="96.0" text="0" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="35.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="l" layoutX="63.0" layoutY="48.0" prefHeight="21.0" prefWidth="96.0" text="0" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="56.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="14.0" prefHeight="21.0" prefWidth="33.0" text="l =" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="56.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="24.0" prefHeight="21.0" prefWidth="33.0" text="d =" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="76.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="d" layoutX="73.0" layoutY="58.0" prefHeight="21.0" prefWidth="96.0" text="0" AnchorPane.leftAnchor="47.0" AnchorPane.topAnchor="76.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="71.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="259.0" text="Свойства частиц округлой формы:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="5.0" layoutY="4.0" prefHeight="21.0" prefWidth="33.0" text="E  =" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="35.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="48.0" prefHeight="16.0" prefWidth="13.0" text="s" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="47.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="es" layoutX="53.0" layoutY="38.0" prefHeight="21.0" prefWidth="96.0" text="0" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="35.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane>
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="1.0" layoutY="1.0" onAction="#showDialog" ripplerFill="#ddeeda" style="-fx-background-color: #38d626;" text="Добавить" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="504.0" AnchorPane.topAnchor="1.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
