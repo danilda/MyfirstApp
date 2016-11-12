@@ -26,5 +26,5 @@
     -fx-scale-x: 0;
 }
 .default-color0.chart-series-line {
-    -fx-stroke: #7CB342;
+    /*-fx-stroke: #7CB342;*/
 }
